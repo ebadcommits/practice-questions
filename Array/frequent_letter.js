@@ -48,3 +48,34 @@ function mostFrequentReduce(arr) {
 // Test
 mostFrequentReduce([1, 1, 2, 3, 4, 4, 4]);
 
+
+
+//map
+function mostFrequentMap(arr) {
+    let map = new Map();
+    let maxCount = 0;
+    let mostFrequent;
+
+    // Step 1: Count occurrences
+    for (let num of arr) {
+        if (map.has(num)) {
+            map.set(num, map.get(num) + 1); // increase count
+        } else {
+            map.set(num, 1); // first time
+        }
+    }
+
+    // Step 2: Find the max count
+    for (let [key, value] of map.entries()) {
+        if (value > maxCount) {
+            maxCount = value;
+            mostFrequent = key;
+        }
+    }
+
+    console.log("Frequency Map:", map);
+    console.log("Most frequent number is:", mostFrequent);
+}
+
+// Test it
+mostFrequentMap([1, 1, 2, 3, 4, 4, 4]);
