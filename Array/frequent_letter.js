@@ -7,7 +7,7 @@ function frequent(val){
             obj[i] = 1
         }
         else{
-            obj[i] = obj[i] + 1
+            obj[i]++
         }
     }
 
