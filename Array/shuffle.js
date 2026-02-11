@@ -10,4 +10,4 @@ const shuffle = function(arr){
     }
     return shuffled
 }
-console.log(shuffle([5,4,8,3,2,9,0,1]))
+console.log(shuffle([1,2,3,4,5,6,7,8,9]))
