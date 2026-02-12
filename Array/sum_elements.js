@@ -14,3 +14,10 @@ function sum2(arr){
     console.log(sum)
 }
 sum2([1,2,3,4,5])
+
+//foreach
+function sum(arr) {
+    let total = 0;
+    arr.forEach(num => total += num);
+    return total;
+}
