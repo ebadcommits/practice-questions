@@ -26,3 +26,12 @@ function evenodd3(arr) {
     }, { even: [], odd: [] });
 }
 console.log(evenodd3([1,2,3,4,5,6,7,8,9,10]));
+
+//foreach
+function evenodd2(arr) {
+    let even = [];
+    let odd = [];
+
+    arr.forEach(num => {num % 2 === 0 ? even.push(num) : odd.push(num);});
+    console.log(even, odd);
+}
