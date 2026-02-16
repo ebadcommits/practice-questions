@@ -33,3 +33,10 @@ function format2(num){
 }
 format2('1234567')
 
+//lol
+function format3(num){
+    let val = Number(num)
+    let lol = val.toLocaleString()
+    console.log(lol)
+}
+format3('1234567')
