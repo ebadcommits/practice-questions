@@ -13,3 +13,23 @@ function format(num){
     console.log(flipped)
 }
 format("1234567")
+
+//reversed loop
+function format2(num){
+    let result = []
+    let splitted = num.split("")
+    let count = 0
+    for(let i = splitted.length - 1; i>=0; i--){
+        result.push(splitted[i])
+        count++
+
+        if(count % 3 === 0 && i != 0){
+            result.push(',')
+            count = 0
+        }
+    }
+    let altered = result.reverse().join("")
+    console.log(altered)
+}
+format2('1234567')
+
