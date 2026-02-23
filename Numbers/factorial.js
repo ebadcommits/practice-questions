@@ -1,7 +1,7 @@
 function factorial(n){
-    let sum = 0
-    for(let i = n - 1 ; i>0 ; i--){
-        sum += (n*i)
+    let sum = 1
+    for(let i = n; i>0 ; i--){
+        sum *= i
     }
     console.log(sum)
 }
