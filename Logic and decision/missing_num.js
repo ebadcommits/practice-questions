@@ -33,3 +33,24 @@ function missingHash(arr){
         if(!map[i]) return i;
     }
 }
+
+
+//usig XOR
+function missing(nums){
+    let xor1 = 0;
+    let xor2 = 0;
+
+    // XOR of all numbers from 1…n
+    for(let i = 1; i <= nums.length + 1; i++){
+        xor1 ^= i;
+    }
+
+    // XOR of all numbers in array
+    for(let num of nums){
+        xor2 ^= num;
+    }
+
+    return xor1 ^ xor2;
+}
+
+console.log(missing([1,2,3,4,5,7])); // 6
