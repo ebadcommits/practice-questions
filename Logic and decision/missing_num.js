@@ -19,3 +19,17 @@ function missingCount(arr){
         }
     }
 }
+
+//using map
+function missingHash(arr){
+    let map = {};
+    let n = arr.length + 1;
+
+    for(let num of arr){
+        map[num] = true;
+    }
+
+    for(let i = 1; i <= n; i++){
+        if(!map[i]) return i;
+    }
+}
