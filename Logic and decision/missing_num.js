@@ -7,3 +7,15 @@ function missing(num){
     return expected - actual
 }
 console.log(missing([1,2,3,4,5,7]))
+
+
+//simple math
+function missingCount(arr){
+    let n = arr.length + 1;
+
+    for(let i = 1; i <= n; i++){
+        if(!arr.includes(i)){
+            return i;
+        }
+    }
+}
