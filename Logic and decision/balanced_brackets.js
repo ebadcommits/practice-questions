@@ -12,7 +12,7 @@ function balanced(str) {
         if (char === '(' || char === '{' || char === '[') {
             stack.push(char);
         }
-
+        
         // if closing bracket
         else if (char === ')' || char === '}' || char === ']') {
             // stack must have that opening bracket on top
@@ -21,9 +21,7 @@ function balanced(str) {
             }
         }
     }
-
     return stack.length === 0;
 }
-
 console.log(balanced("{[()]}"));  // true
 console.log(balanced("{[(])}"));  // false
